@@ -1,64 +1,70 @@
 <p align="center">
   <a href="https://fanzhang-lab-shou.github.io/OFEL/">
-    <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/ofel-banner.png" alt="OFEL — Oceanic Fisheries Ecosystem Laboratory, Shanghai Ocean University. Understanding ocean change. Informing fisheries." width="100%">
+    <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/cover.svg" alt="OFEL — Ocean science. Quantitative thinking. Oceanic Fisheries Ecosystem Laboratory, Shanghai Ocean University." width="100%">
   </a>
 </p>
 
 <p align="center">
-  <strong>大洋渔业生态系统实验室 · 上海海洋大学</strong><br>
-  <sub>OCEANIC FISHERIES ECOSYSTEM LABORATORY · SHANGHAI OCEAN UNIVERSITY</sub>
+  <a href="https://fanzhang-lab-shou.github.io/OFEL/"><img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/nav-website.svg" alt="Laboratory website" height="36"></a>
+  <a href="https://github.com/FanZLAB-SHOU/ALSCL"><img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/nav-alscl.svg" alt="ALSCL software repository" height="36"></a>
+  <a href="https://github.com/FanZLAB-SHOU/OFEL"><img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/nav-ofel.svg" alt="OFEL website repository" height="36"></a>
+</p>
+
+<h2 align="center">Science for a changing ocean</h2>
+
+<p align="center">
+  <strong>大洋渔业生态系统实验室 · 上海海洋大学</strong>
+</p>
+
+At Shanghai Ocean University, we study how fish populations respond to fishing and a changing ocean. Led by **Fan Zhang (张帆)**, our research combines population modelling, fisheries data science and biological evidence to inform marine fisheries conservation and management.
+
+我们关注鱼类种群、捕捞活动与海洋环境之间的联系，通过资源评估模型、渔船轨迹数据和生物学研究，为渔业资源养护与管理提供科学依据。
+
+<p>
+  <a href="https://fanzhang-lab-shou.github.io/OFEL/research/themes/">
+    <picture>
+      <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/research-mobile.svg">
+      <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/research.svg" alt="Our research: population dynamics and stock assessment; artificial intelligence and fishing-vessel behaviour; fish biology and DNA; climate change and marine ecosystems; climate-adaptive fisheries management. ALSCL brings quantitative models into practice. Explore all research directions." width="100%">
+    </picture>
+  </a>
+</p>
+
+<details>
+<summary>Explore our research areas</summary>
+
+- [Population dynamics &amp; stock assessment](https://fanzhang-lab-shou.github.io/OFEL/research/themes/#population-assessment): growth, recruitment, mortality and population change.
+- [AI &amp; fishing-vessel behaviour](https://fanzhang-lab-shou.github.io/OFEL/research/themes/#vessel-ai): fishing activity and fleet dynamics through vessel-tracking data.
+- [Fish biology &amp; DNA](https://fanzhang-lab-shou.github.io/OFEL/research/themes/#biology-dna): life histories, population structure and marine biodiversity.
+- [Climate &amp; marine ecosystems](https://fanzhang-lab-shou.github.io/OFEL/research/themes/#climate-ecosystems): environmental variability and the responses of marine species.
+- [Climate-adaptive fisheries management](https://fanzhang-lab-shou.github.io/OFEL/research/themes/#adaptive-management): management approaches for changing marine populations.
+
+</details>
+
+<p>
+  <picture>
+    <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/methods-mobile.svg">
+    <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/methods.svg" alt="Tools we work with: R, Template Model Builder (TMB), C++ and ggplot2." width="100%">
+  </picture>
+</p>
+
+<h3 align="center">Explore our work</h3>
+
+<p align="center">
+  <a href="https://github.com/FanZLAB-SHOU/ALSCL"><img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/project-alscl.svg" alt="ALSCL — fisheries stock assessment in R. Age- and length-structured catch-at-length models. Open the code repository." width="49%"></a>
+  <a href="https://fanzhang-lab-shou.github.io/OFEL/"><img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/project-ofel.svg" alt="Explore OFEL — research, people and publications. Visit the laboratory website." width="49%"></a>
 </p>
 
 <p align="center">
-  <a href="https://fanzhang-lab-shou.github.io/OFEL/"><img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/website.svg" alt="Laboratory website" height="42"></a>
-  <a href="https://github.com/FanZLAB-SHOU/ALSCL"><img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/alscl.svg" alt="ALSCL stock assessment software" height="42"></a>
-  <a href="https://github.com/FanZLAB-SHOU/OFEL"><img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/ofel.svg" alt="Laboratory website repository" height="42"></a>
+  <a href="https://fanzhang-lab-shou.github.io/ALSCL/">ALSCL documentation</a> &nbsp; / &nbsp;
+  <a href="https://fanzhang-lab-shou.github.io/OFEL/members/">Meet our people</a> &nbsp; / &nbsp;
+  <a href="https://fanzhang-lab-shou.github.io/OFEL/publications/">Read our publications</a>
 </p>
 
-## Science for a changing ocean
-
-At Shanghai Ocean University, we study how fish populations respond to fishing and a changing ocean. Led by **Fan Zhang (张帆)**, our research combines population modelling, fisheries data science and biological evidence to inform the conservation and management of marine fisheries.
-
-我们关注鱼类种群变化、捕捞活动与海洋环境之间的联系，通过资源评估模型、渔船轨迹数据和生物学研究，为渔业资源养护与管理提供科学依据。
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <sub>01 / POPULATIONS</sub>
-      <h3>Population dynamics<br>&amp; stock assessment</h3>
-      <p>Growth, recruitment and mortality; quantitative models that connect observations with population change.</p>
-    </td>
-    <td width="50%" valign="top">
-      <sub>02 / FISHERIES DATA</sub>
-      <h3>Artificial intelligence<br>&amp; fishing-vessel behaviour</h3>
-      <p>Vessel-tracking data and machine learning to understand fishing activity, fleet dynamics and fishing effort.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <sub>03 / BIOLOGY</sub>
-      <h3>Fish biology<br>&amp; DNA research</h3>
-      <p>Life histories, biological observations and genetic evidence to investigate population structure and marine biodiversity.</p>
-    </td>
-    <td width="50%" valign="top">
-      <sub>04 / OCEAN CHANGE</sub>
-      <h3>Marine ecosystems<br>&amp; climate-adaptive management</h3>
-      <p>How environmental variability affects marine populations, and how fisheries management can respond.</p>
-    </td>
-  </tr>
-</table>
-
-### Models into practice
-
-[**ALSCL ↗**](https://github.com/FanZLAB-SHOU/ALSCL) · Fisheries stock assessment in R. Age- and length-structured catch-at-length models, with tools for fitting, diagnostics and simulation. [Read the documentation](https://fanzhang-lab-shou.github.io/ALSCL/).
+<hr>
 
 <p align="center">
-  <a href="https://fanzhang-lab-shou.github.io/OFEL/research/themes/">Research</a> &nbsp; / &nbsp;
-  <a href="https://fanzhang-lab-shou.github.io/OFEL/members/">People</a> &nbsp; / &nbsp;
-  <a href="https://fanzhang-lab-shou.github.io/OFEL/publications/">Publications</a> &nbsp; / &nbsp;
-  <a href="https://fanzhang-lab-shou.github.io/OFEL/contact/">Contact &amp; join us</a>
-</p>
-
-<p align="center">
-  <sub>Shanghai, China &nbsp; · &nbsp; <a href="mailto:f-zhang@shou.edu.cn">f-zhang@shou.edu.cn</a></sub>
+  <strong>Research visits, graduate study &amp; collaboration</strong><br>
+  <a href="https://fanzhang-lab-shou.github.io/OFEL/contact/">Start a conversation ↗</a> &nbsp; · &nbsp;
+  <a href="mailto:f-zhang@shou.edu.cn">f-zhang@shou.edu.cn</a><br>
+  <sub>FAN ZHANG LAB &nbsp; / &nbsp; SHANGHAI OCEAN UNIVERSITY &nbsp; / &nbsp; SHANGHAI, CHINA</sub>
 </p>
