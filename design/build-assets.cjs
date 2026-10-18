@@ -31,16 +31,29 @@ function overview(mobile){const w=mobile?780:1200,cols=mobile?2:3,cw=mobile?366:
  out+=text(30,41,'OUR RESEARCH',13,C.mint,700,'letter-spacing="2.3"')+text(30,81,'Five directions. One connected ocean.',mobile?27:32,C.white,650,'letter-spacing="-.7"');
  cards.forEach((c,i)=>{let x=pad+(i%cols)*(cw+gap),y=head+Math.floor(i/cols)*(ch+gap);out+=`<g transform="translate(${x} ${y})"><rect width="${cw}" height="${ch}" rx="16" fill="${C.panel}" stroke="${C.line}"/><path d="M23 0h68" stroke="${i%2?C.mint:C.blue}" stroke-width="2"/>${text(23,35,c.k,12,C.muted,600,'letter-spacing="1.5"')}${text(cw-23,35,c.n,13,C.mint,600,'text-anchor="end"')}<g transform="translate(23 56) scale(.63)" fill="none" stroke="${i%2?C.mint:C.blue}" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">${c.icon}</g>${text(23,124,c.a,24,C.white,650,'letter-spacing="-.5"')}${text(23,153,c.b,24,C.white,650,'letter-spacing="-.5"')}${text(23,193,c.d[0],mobile?20:16,C.muted)}${text(23,222,c.d[1],mobile?20:16,C.muted)}</g>`});save('research'+(mobile?'-mobile':''),w,h,'Five research directions — populations and assessment; AI and vessel behaviour; biology and DNA; ocean change; adaptive fisheries management. ALSCL puts these quantitative methods into practice.',out)}
 overview(false);overview(true);
-let strip=`<rect x="1" y="1" width="1198" height="140" rx="20" fill="${C.bg}" stroke="${C.line}"/>`+text(31,44,'METHODS & DATA',13,C.mint,700,'letter-spacing="2"')+text(31,82,'Tools we work with',25,C.white,650);
-const tools=[['R','R LANGUAGE','#79b9ff'],['TMB','AUTO DIFF','#79dfd0'],['C++','COMPUTATION','#91a9ff'],['ggplot2','VISUALISATION','#f0c58b']];
-tools.forEach(([a,b,color],i)=>{let x=385+i*199;strip+=`<rect x="${x}" y="26" width="49" height="49" rx="13" fill="${color}" fill-opacity=".12" stroke="${color}" stroke-opacity=".4"/>${text(x+24.5,57,a,a==='ggplot2'?10:a==='TMB'?15:21,color,700,'text-anchor="middle"')}${text(x,106,b,10,C.muted,600,'letter-spacing="1"')}`});
-save('methods',1200,142,'Methods and data — R, TMB automatic differentiation, C++ computation and ggplot2 visualisation.',strip);
+// Brand artwork is vendored from Devicon (MIT); glyphs retain their original colours.
+const toolLogos=[['r','R'],['python','Python'],['cplusplus','C++'],['git','Git'],['github','GitHub']];
+function logo(name,x,y,size){
+ let raw=fs.readFileSync(path.join(root,'assets/logos',name+'.svg'),'utf8');
+ raw=raw.replace(/<\?xml[^>]*>/g,'').replace(/<svg[^>]*>/,`<svg x="${x}" y="${y}" width="${size}" height="${size}" viewBox="0 0 128 128">`);
+ // GitHub's black silhouette needs a light fill on the dark panel.
+ if(name==='github')raw=raw.replace(/<path(?![^>]*fill=)/g,'<path fill="#edf6ff"');
+ return raw;
+}
+function methods(mobile){
+ const w=mobile?780:1200,h=mobile?432:208;
+ let body=`<rect x="1" y="1" width="${w-2}" height="${h-2}" rx="22" fill="${C.bg}" stroke="${C.line}"/>${text(30,42,'METHODS & DATA',mobile?18:13,C.mint,700,'letter-spacing="2"')}${text(30,mobile?82:86,'Tools we work with',mobile?30:25,C.white,650)}`;
+ if(!mobile)body+=text(30,125,'TMB / Model fitting',17,C.muted);
+ toolLogos.forEach(([name,label],i)=>{
+  const x=mobile?50+(i%3)*250:380+i*160,y=mobile?107+Math.floor(i/3)*151:28,size=mobile?77:70;
+  body+=`<rect x="${x-12}" y="${y-6}" width="${size+24}" height="${size+24}" rx="20" fill="${C.panel}" stroke="${C.line}"/>${logo(name,x,y,size)}${text(x+size/2,y+size+48,label,mobile?23:18,C.white,600,'text-anchor="middle"')}`;
+ });
+ if(mobile)body+=`<rect x="538" y="266" width="175" height="77" rx="18" fill="${C.panel}" stroke="${C.line}"/>${text(625,313,'TMB',32,C.mint,700,'text-anchor="middle"')}${text(625,383,'Model fitting',20,C.muted,400,'text-anchor="middle"')}`;
+ save('methods'+(mobile?'-mobile':''),w,h,'R, Python, C++, Git and GitHub logos. TMB for statistical model fitting.',body);
+}
+methods(false);methods(true);
 function project(kind){const software=kind==='alscl';let out=`<rect x="1" y="1" width="589" height="238" rx="20" fill="url(#bg)" stroke="${C.line}"/>`;
  out+=text(27,36,software?'01 / SCIENTIFIC SOFTWARE':'02 / THE LABORATORY',12,C.mint,700,'letter-spacing="1.5"')+text(27,90,software?'ALSCL':'Explore OFEL',40,C.white,700,'letter-spacing="-1"')+text(27,128,software?'Fisheries stock assessment in R':'Research, people and publications',20,C.muted)+text(27,162,software?'Age- and length-structured catch-at-length models.':'A closer look at our work and the people behind it.',16,C.muted)+text(27,210,software?'CODE + DOCUMENTATION':'VISIT THE LAB WEBSITE',12,C.blue,700,'letter-spacing="1.4"');
  out+=`<path d="M 534 202h20m-7-7 7 7-7 7" fill="none" stroke="${C.mint}" stroke-width="2" stroke-linecap="round"/>`;save('project-'+kind,591,240,software?'ALSCL — R software for age- and length-structured catch-at-length stock assessment. Open the repository.':'Explore OFEL — research, people, publications and news. Open the laboratory website.',out)}
 project('alscl');project('ofel');
 for(const [name,label,w] of [['website','LAB WEBSITE',186],['ofel','GITHUB / OFEL',193],['alscl','ALSCL / SOFTWARE',225]]){save('nav-'+name,w,44,label,`<rect x=".5" y=".5" width="${w-1}" height="43" rx="22" fill="${C.panel}" stroke="${C.line}"/>${text(19,27,label,12,C.white,600,'letter-spacing="1"')}<path d="M ${w-37} 22h15m-5-5 5 5-5 5" fill="none" stroke="${C.mint}" stroke-width="1.5"/>`)}
-
-let methodsMobile=`<rect x="1" y="1" width="778" height="348" rx="22" fill="${C.bg}" stroke="${C.line}"/>${text(30,42,'METHODS & DATA',18,C.mint,700,'letter-spacing="2"')}${text(30,82,'Tools we work with',30,C.white,650)}`;
-tools.forEach(([a,b,color],i)=>{let x=30+(i%2)*380,y=110+Math.floor(i/2)*114;methodsMobile+=`<rect x="${x}" y="${y}" width="76" height="76" rx="18" fill="${color}" fill-opacity=".12" stroke="${color}" stroke-opacity=".4"/>${text(x+38,y+48,a,a==='ggplot2'?16:a==='TMB'?23:32,color,700,'text-anchor="middle"')}${text(x+94,y+44,b,18,C.muted,600)}`});
-save('methods-mobile',780,350,'Tools we work with: R, TMB, C++ and ggplot2.',methodsMobile);

@@ -42,9 +42,49 @@ At Shanghai Ocean University, we study how fish populations respond to fishing a
 
 <p>
   <picture>
-    <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/methods-mobile.svg">
-    <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/methods.svg" alt="Tools we work with: R, Template Model Builder (TMB), C++ and ggplot2." width="100%">
+    <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/methods-mobile.svg?v=python-logo">
+    <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/methods.svg?v=python-logo" alt="R, Python, C++, Git and GitHub logos. TMB for statistical model fitting." width="100%">
   </picture>
+</p>
+
+<h2 align="center">GitHub analytics</h2>
+
+<p align="center"><sub>Public GitHub activity · updated daily · code statistics include forked repositories</sub></p>
+
+<p>
+  <a href="https://github.com/FanZLAB-SHOU?tab=repositories">
+    <picture>
+      <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/github-overview-mobile.svg">
+      <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/github-overview.svg" alt="GitHub overview: contributions, commit contributions, public repositories and active days." width="100%">
+    </picture>
+  </a>
+</p>
+
+<p>
+  <a href="https://github.com/FanZLAB-SHOU?tab=repositories">
+    <picture>
+      <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/github-activity-mobile.svg">
+      <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/github-activity.svg" alt="Daily contributions across the last 30 GitHub calendar days." width="100%">
+    </picture>
+  </a>
+</p>
+
+<p>
+  <a href="https://github.com/FanZLAB-SHOU?tab=repositories">
+    <picture>
+      <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/github-languages-mobile.svg">
+      <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/github-languages.svg" alt="Public repository language composition, measured by code bytes; includes forks." width="100%">
+    </picture>
+  </a>
+</p>
+
+<p>
+  <a href="https://github.com/FanZLAB-SHOU?tab=repositories">
+    <picture>
+      <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/github-calendar-mobile.svg">
+      <img src="https://raw.githubusercontent.com/FanZLAB-SHOU/FanZLAB-SHOU/main/assets/github-calendar.svg" alt="Recent contribution heatmap. Cells contain actual GitHub dates and counts." width="100%">
+    </picture>
+  </a>
 </p>
 
 <h3 align="center">Explore our work</h3>
